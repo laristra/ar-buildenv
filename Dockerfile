@@ -5,7 +5,7 @@ COPY conda_req.txt /tmp/
 COPY pip_req.txt /tmp/
 
 RUN apt-get update
-RUN apt-get --yes install texlive-full texlive-science
+RUN apt-get --yes install texlive-full texlive-science inkscape
 RUN wget http://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
 RUN bash miniconda.sh -b -p /tmp/miniconda
 ENV PATH="/tmp/miniconda/bin:$PATH"
