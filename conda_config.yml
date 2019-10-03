@@ -11,3 +11,4 @@ dependencies:
   - cython
   - sphinxcontrib-bibtex
   - pint
+  - cvxopt
